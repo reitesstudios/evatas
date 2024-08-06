@@ -1,101 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reites Studios</title>
+    <title>Evatas - Музыка из ВК</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e0f7fa;
+            background-color: #f5f5f5;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            padding: 0;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            flex: 1;
         }
         .header {
-            background-color: #0288d1;
-            color: white;
-            padding: 20px 0;
             text-align: center;
+            padding: 20px 0;
+        }
+        .header img {
+            max-width: 100px;
         }
         .header h1 {
-            margin: 0;
-            font-size: 2.5em;
+            margin: 10px 0;
         }
-        .nav {
-            background-color: #0277bd;
-            overflow: hidden;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
-        .nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        .nav a:hover {
-            background-color: #01579b;
-        }
-        .main {
+        .content-left, .content-right {
+            flex: 1;
+            margin: 20px;
+            background-color: white;
             padding: 20px;
-            background-color: #ffffff;
-            margin-top: 20px;
-            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .content-left ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content-left ul li {
+            margin: 10px 0;
+        }
+        .content-left ul li a {
+            text-decoration: none;
+            color: #0288d1;
+            font-weight: bold;
+        }
+        .content-left ul li a:hover {
+            text-decoration: underline;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #0288d1;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin: 5px 0;
+            display: inline-block;
+        }
+        .buttons a:hover {
+            background-color: #0277bd;
         }
         .footer {
             background-color: #0288d1;
             color: white;
             text-align: center;
             padding: 10px 0;
-            margin-top: auto;
         }
         .footer a {
             color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <h1>Reites Studios</h1>
-            <p>Building innovative apps for a better experience</p>
-        </div>
-    </div>
-    <div class="nav">
-        <div class="container">
-            <a href="/">Home</a>
-            <a href="/evatas/privacy/">Privacy Policy</a>
-            <a href="/evatas/contact/">Contact Us</a>
-            <a href="https://play.google.com/store/apps/details?id=com.example.evatas">Download App</a>
-        </div>
-    </div>
     <div class="container">
-        <div class="main">
-            <h2>Welcome to Reites Studios</h2>
-            <p>At Reites Studios, we are dedicated to creating high-quality, user-friendly mobile applications. Our latest app, Evatas, provides a seamless and enjoyable experience for all users.</p>
-            <h3>Our Apps</h3>
-            <p>Explore our latest app:</p>
-            <ul>
-                <li><a href="https://play.google.com/store/apps/details?id=com.example.evatas">Evatas on Google Play</a></li>
-            </ul>
-            <h3>Contact Us</h3>
-            <p>If you have any questions or suggestions, feel free to <a href="/evatas/contact/">contact us</a>.</p>
+        <div class="header">
+            <h1>Evatas - Музыка из ВК</h1>
+            <p>Приложение позволяет скачивать и слушать музыку без ограничений по времени и навязчивой аудиорекламы!</p>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <ul>
+                    <li><strong>Платформа:</strong> Android 5.0+</li>
+                    <li><strong>Размер приложения:</strong> 30.2 Мб</li>
+                </ul>
+                <div class="buttons">
+                    <a href="download.apk">Download Apk</a>
+                    <a href="https://play.google.com/store">Google Play</a>
+                    <a href="https://appgallery.huawei.com">App Gallery</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
-        <div class="container">
-            <p>&copy; 2024 Reites Studios. All rights reserved.</p>
-            <p><a href="/evatas/privacy/">Privacy Policy</a> | <a href="mailto:reitesstudios@gmail.com">Contact Us</a></p>
-        </div>
+        <p>&copy; 2024 Reites Studios. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="mailto:reitesstudios@gmail.com">Contact Us</a></p>
     </div>
 </body>
 </html>
